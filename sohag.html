@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The New York Times - Simple Clone</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #111;
+        line-height: 1.5;
+      }
+      .head {
+        display: flex;
+        justify-content: space-between;
+
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .top-bar {
+        font-size: 14px;
+        text-align: left;
+        padding: 10px 20px;
+      }
+
+      header {
+        text-align: center;
+        padding: 15px 0;
+        /* border-bottom: 1px solid #ddd; */
+      }
+      header h1 {
+        font-family: "Times New Roman", serif;
+        font-size: 3em;
+        margin: 0;
+      }
+
+      nav {
+        text-align: center;
+        /* border-bottom: 1px solid #ddd; */
+        padding: 12px 0;
+      }
+      nav a {
+        margin: 0 12px;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 25px 40px;
+      }
+
+      .main-article img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .main-article h2 {
+        font-size: 24px;
+        margin: 8px 0;
+      }
+      .main-article p {
+        font-size: 15px;
+        color: #444;
+      }
+
+      .side-article img {
+        max-width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+      .side-article h2 {
+        font-size: 20px;
+        margin: 6px 0;
+      }
+      .side-article p {
+        font-size: 14px;
+        color: #444;
+      }
+
+      footer {
+        border-top: 1px solid #ddd;
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+        color: #666;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        nav a {
+          margin: 0 8px;
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <div class="top-bar">
+        Tuesday, September 30, 2025 &nbsp; | &nbsp; Today’s Paper
+      </div>
+      <div>
+        <h1>The New York Times</h1>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#">U.S.</a>
+      <a href="#">World</a>
+      <a href="#">Business</a>
+      <a href="#">Arts</a>
+      <a href="#">Lifestyle</a>
+      <a href="#">Opinion</a>
+      <a href="#">Audio</a>
+      <a href="#">Games</a>
+      <a href="#">Cooking</a>
+      <hr />
+      <hr />
+    </nav>
+
+    <div class="container">
+      <div class="main-article">
+        <h2>
+          U.S. Deports Planeload of Iranians After Deal With Tehran, Officials
+          Say
+        </h2>
+        <p>
+          The deportation flight to Iran is the most stark push yet by the Trump
+          administration to deport migrants even to places with harsh human
+          rights conditions.
+        </p>
+        <p style="font-size: 12px; color: #666">3 MIN READ</p>
+      </div>
+      <div class="main-article">
+        <img
+          src="https://static01.nyt.com/images/2025/09/30/multimedia/30int-iran-deportation-mtlv/30int-iran-deportation-mtlv-articleLarge.jpg?quality=75&auto=webp"
+          alt="President Trump at the UN"
+        />
+      </div>
+
+      <div class="side-article">
+        <img
+          src="https://tse3.mm.bing.net/th/id/OIP.7-zyZ2NnUnnVlzYKB2ym0QHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Choco Taco"
+        />
+        <h2>How an Ice Cream Obsessive Recreated the Choco Taco</h2>
+        <p>
+          A trans-Atlantic journey, three robots and some trade secrets all went
+          into the reviving of the childhood favorite.
+        </p>
+        <p style="font-size: 12px; color: #666">5 MIN READ</p>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 The New York Times (sohag)</footer>
+  </body>
+</html>
